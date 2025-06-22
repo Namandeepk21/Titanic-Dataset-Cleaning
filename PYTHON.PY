@@ -1,0 +1,21 @@
+import pandas as pd
+df = pd.read_csv("titanic.csv")
+print("First 5 rows:")
+print(df.head())
+print("\nSummery Statistics")
+print(df.info())
+print(df.shape)
+print(df.columns)
+print(df.dtypes)
+print(df.head(10))
+print(df.tail())
+print(df.isnull().sum())
+print(df.isnull().any())
+# print(df['Sex'].value_counts())
+# print(df['Embarked'].unique())
+# df.dropna(inplace=True)https://github.com/Namandeepk21/Titanic-Dataset-Cleaning.git
+# df.fillna(0,inplace=True)
+print(df[df['Age']>60])
+# print(df[df['Sex']=='female'
+# '])
+print(df.sort_values('Fare',ascending=False))
